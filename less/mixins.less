@@ -1,10 +1,21 @@
 // Mixins in here
 
-.btn-mixin(@width, @size, @pad, @color, @border, @radius) {
+.btn-mixin(@width, @font-color, @size, @pad, @align, @color-bk, @radius) {
   width: @width;
+  color: @font-color;
   font-size: @size;
   padding: @pad;
-  background: @color;
-  border: @border;
+  text-align: @align;
+  background: @color-bk;
   border-radius: @radius;
+}
+
+.home {
+  .content-pick {
+    .destination {
+      .btn {
+        .btn-mixin(85%, @white, 1.8rem, 15px, center, teal, 10px);
+      }
+    }
+  }
 }
