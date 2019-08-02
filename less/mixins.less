@@ -15,6 +15,9 @@
     .destination {
       .btn {
         .btn-mixin(85%, @white, 1.8rem, 15px, center, teal, 10px);
+        @media @mobile {
+          .btn-mixin(100%, @white, 1.8rem, 13px, center, @eastern-blue, 15px);
+        }
       }
     }
   }

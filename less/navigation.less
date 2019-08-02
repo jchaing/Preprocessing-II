@@ -8,6 +8,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media @mobile {
+      flex-direction: column;
+      margin: 1rem auto;
+    }
+    h1 {
+      @media @mobile {
+        font-size: 3rem;
+        margin: 2rem auto;
+      }
+    }
     ul {
       font-size: 1.6rem;
       display: flex;
