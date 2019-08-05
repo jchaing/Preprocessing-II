@@ -1,4 +1,5 @@
 .home .content-pick .destination .btn {
+  transition: 0.3s;
   width: 85%;
   color: #FFFFFF;
   font-size: 1.8rem;
@@ -6,6 +7,11 @@
   text-align: center;
   background: teal;
   border-radius: 10px;
+}
+.home .content-pick .destination .btn:hover {
+  background: #FFFFFF;
+  color: #17A2B8;
+  border: 2px solid #17A2B8;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
